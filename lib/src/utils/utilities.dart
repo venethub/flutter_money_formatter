@@ -76,6 +76,6 @@ class _Utilities {
   /// Returns base compact format
   NumberFormat get baseCompact =>
       this.settings.compactFormatType == CompactFormatType.short
-          ? NumberFormat.compact()
-          : NumberFormat.compactLong();
+          ? NumberFormat.compact(locale: 'en_US')
+          : NumberFormat.compactLong(locale: 'en_US');
 }

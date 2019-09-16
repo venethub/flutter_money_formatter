@@ -165,6 +165,7 @@ class FlutterMoneyFormatter {
 
     String reformat = NumberFormat.currency(
             symbol: '',
+            locale: 'en_US',
             decimalDigits:
                 numerics.indexOf('.') == -1 ? 0 : this.settings.fractionDigits)
         .format(num.parse(numerics));
